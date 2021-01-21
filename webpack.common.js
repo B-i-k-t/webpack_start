@@ -53,9 +53,9 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
             {
-                test: /\.html$/i,
-                loader: 'html-loader',
-            }
+                test: /\.pug$/,
+                use: ['html-loader', 'pug-html-loader'],
+            },
         ],
     },
     
